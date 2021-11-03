@@ -1,4 +1,4 @@
-FROM debian:buster
+FROM debian:buster-slim
 RUN apt-get update
 RUN apt-get install -y git gcc g++ make apt-utils build-essential autoconf automake libtool python3 python3-pip
 COPY ./requirements.txt ./
