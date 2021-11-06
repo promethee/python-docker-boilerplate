@@ -4,5 +4,5 @@ RUN apt-get install -y git gcc g++ make apt-utils build-essential autoconf autom
 COPY ./requirements.txt ./
 RUN pip3 install -r requirements.txt
 WORKDIR /usr/src/app
-COPY ./main.py ./
+COPY ./CODE2000.TTF ./main.py ./
 CMD python3 main.py
